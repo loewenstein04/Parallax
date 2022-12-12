@@ -1,0 +1,61 @@
+body, html{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 2px;
+    transform-style: preserve-3d;
+}
+
+.secao {
+    margin: 50px;
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    transform-style: inherit; /*Herança*/
+}
+
+.secao::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translatez(-1px)scale(1.5);
+}
+
+.conteudo{
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    padding: 20px 10px;
+    background-color: rgba(240, 248, 255, 0.5);
+    color: gray;
+    font-size: 22px;
+    text-align: justify;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 3px 3px 3px #808080;
+
+}
+
+.fundo1::before{
+    background-image: url(img/a-paisagem-bonita-do-sol-da-praia-com-um-barco_1112-212.jpeg);
+}
+
+.fundo2::before{
+    background-image: url(img/paisagem-de-nevoeiro-matinal-e-montanhas-com-baloes-de-ar-quente-ao-nascer-do-sol_335224-794.jpeg);
+}
+
+img{
+    height: 200px;
+    width: 400px;
+}
