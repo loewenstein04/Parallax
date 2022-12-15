@@ -1,61 +1,119 @@
-body, html{
+* {
     padding: 0;
     margin: 0;
 }
 
-.wrapper{
-    height: 100vh;
-    overflow-x: hidden;
-    perspective: 2px;
-    transform-style: preserve-3d;
+body {
+    background-color: #ffaaa6;
 }
 
-.secao {
-    margin: 50px;
-    position: relative;
-    height: 100vh;
-    min-height: 700px;
-    transform-style: inherit; /*Herança*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7cfcd;
 }
 
-.secao::before{
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -10;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transform: translatez(-1px)scale(1.5);
+h1{
+    width: 40%;
+    display: flex;
+    padding-left: 50px;
 }
 
-.conteudo{
-    position: absolute;
-    top: 25%;
-    width: 80%;
-    padding: 20px 10px;
-    background-color: rgba(240, 248, 255, 0.5);
-    color: gray;
-    font-size: 22px;
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    margin-right: 5%;
+    background: radial-gradient(#ffff, #ffd3b5);
+}
+
+.menu{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: #dcedc2;
+    border: thin black solid;
+}
+
+li:hover{
+    transition: 1s;
+    scale: 1.2;
+}
+
+li{
+    list-style: none;
+}
+
+.contato {
+    width: 25%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 70px;
+}
+
+.contato a{
+    margin-right: 20px;
+}
+
+section{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 100px;
+    background-color: #ffd3b5;
+}
+
+.sobre{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sobre h2{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.foto1{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sobre h3{
+    width: 25%;
+    margin-top: 50px;
+}
+
+.sobre p{
+    width: 25%;
     text-align: justify;
-    left: 50%;
-    transform: translate(-50%);
-    box-shadow: 3px 3px 3px #808080;
+    margin-top: 10px;
+}
+
+.foto.fotoa{
+    width: 50%;
+    height: 70%;
 
 }
 
-.fundo1::before{
-    background-image: url(img/a-paisagem-bonita-do-sol-da-praia-com-um-barco_1112-212.jpeg);
-}
-
-.fundo2::before{
-    background-image: url(img/paisagem-de-nevoeiro-matinal-e-montanhas-com-baloes-de-ar-quente-ao-nascer-do-sol_335224-794.jpeg);
-}
-
-img{
-    height: 200px;
-    width: 400px;
+.foto img{
+    width: 100%;
+    height: 100%;
 }
