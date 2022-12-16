@@ -116,6 +116,7 @@ section {
     background-image: url(img/foto1.jpg);
     text-shadow: 1px 1px 1px white;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .conteudo {
