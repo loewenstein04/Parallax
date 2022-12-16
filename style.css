@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #ffaaa6;
+}
+
+/* Cabeçalho */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7cfcd;
+}
+
+h1 {
+    width: 40%;
+    display: flex;
+    padding-left: 50px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    margin-right: 5%;
+    background: radial-gradient(#ffff, #ffd3b5);
+}
+
+.menu {
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: #dcedc2;
+    border: thin black solid;
+}
+
+li:hover {
+    transition: 1s;
+    scale: 1.2;
+}
+
+li {
+    list-style: none;
+}
+
+.contato {
+    width: 25%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 70px;
+}
+
+.contato a {
+    margin-right: 20px;
+}
+
+/* Sobre */
+
+section {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 100px;
+    background-color: #ffd3b5;
+}
+
+.sobre {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sobre h2 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.sobre p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.titulo {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 3px 3px 13px 0px #ffd3b5;
+}
+
+.img1 {
+    background-image: url(img/foto1.jpg);
+    text-shadow: 1px 1px 1px white;
+    background-attachment: fixed;
+}
+
+.conteudo {
+    width: 100%;
+    border: thin #ffddc6 outset;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 8px;
+    box-shadow: 0px 0px 5px rgb(227, 213, 213);
+}
+
+.img2{
+    background: url(img/foto2.jpeg) no-repeat;
+    background-size: cover;
+    text-shadow: 1px 1px 1px white;
+    background-attachment: fixed;
+}
+
+#end {
+    margin-bottom: 20px;
+}
+
+/* Produtos */
+
+.tudo h2 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.produtos {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tudo img {
+    height: 200px;
+    width: 200px;
+}
+
+a:hover {
+    transition: 1s;
+    scale: 1.2;
+}
+
+.produto {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produtoa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    background-color: #A8E6CE;
+    color: black;
+    border: thin #79e4bb outset;
+    box-shadow: 0px 0px 5px #9ddec5;
+    border-radius: 10px;
+}
+
+.produtoa h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+.produtob {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    background-color: #A8E6CE;
+    color: black;
+    border: thin #79e4bb outset;
+    box-shadow: 0px 0px 5px #9ddec5;
+    border-radius: 10px;
+}
+
+.produtob h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.produtoc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    background-color: #A8E6CE;
+    color: black;
+    border: thin #79e4bb outset;
+    box-shadow: 0px 0px 5px #9ddec5;
+    border-radius: 10px;
+}
+
+.produtoc h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f68e95;
+}
+
+#contato {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border: thin black solid;
+    border-radius: 15px;
+    background-color: white;
+}
